@@ -7,7 +7,7 @@ import { createCustomer, getCustomer, updateCustomer, deleteCustomer } from './S
 import { useParams } from 'react-router-dom';
 
 
-function FormPage(props, history) {
+function FormPage(props) {
     const navigate = useNavigate();
     const { id } = useParams();
     const [customer, setCustomer] = useState({
@@ -68,13 +68,13 @@ function FormPage(props, history) {
                         <label className="col-form-label">First Name: </label>
                     </div>
                     <div className="col-4">
-                        <input className="form-control" name="firstName" value={customer.firstName} onChange={handleChange} required></input>
+                        <input className="form-control" name="firstName" value={customer.firstName} onChange={handleChange}></input>
                     </div>
                     <div className="col-2">
                         <label className="col-form-label">Last Name: </label>
                     </div>
                     <div className="col-4">
-                        <input className="form-control" name="lastName" value={customer.lastName} onChange={handleChange} required></input>
+                        <input className="form-control" name="lastName" value={customer.lastName} onChange={handleChange}></input>
                     </div>
                 </div>
                 <div className="row mb-3">
@@ -82,13 +82,13 @@ function FormPage(props, history) {
                         <label className="col-form-label">Phone: </label>
                     </div>
                     <div className="col-4">
-                        <input type="tel" className="form-control" name="phone" value={customer.phone} onChange={handleChange} required></input>
+                        <input type="tel" className="form-control" name="phone" value={customer.phone} onChange={handleChange}></input>
                     </div>
                     <div className="col-2">
                         <label className="col-form-label">Email: </label>
                     </div>
                     <div className="col-4">
-                        <input type="email" className="form-control" name="email" value={customer.email} onChange={handleChange} required></input>
+                        <input type="email" className="form-control" name="email" value={customer.email} onChange={handleChange}></input>
                     </div>
                 </div>
                 <div className="row mb-3">

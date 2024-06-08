@@ -3,8 +3,6 @@ import './App.css';
 import FrontPage from './FrontPage';
 import FormPage from './FormPage';
 import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
-import CustomerList from './CustomerList';
-import CustomerForm from './CustomerForm';
 
 function App() {
     return (
